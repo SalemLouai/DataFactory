@@ -14,7 +14,7 @@
 			],
 			"sinks": [],
 			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tpurgeFiles: true,\n\tformat: 'avro',\n\tcompressionType: 'deflate') ~> AzureStorageAccount"
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tpurgeFiles: true,\n\tformat: 'avro',\n\tcontainer: 'capturecontainer',\n\tfolderPath: 'eventhubcapaturenamespace/eventhubcapaturename',\n\tcompressionType: 'deflate') ~> AzureStorageAccount"
 		}
 	}
 }
