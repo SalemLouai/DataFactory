@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "testsalem_testwithcapture_0_2021_02_17_09_34_36.avro",
+				"fileName": "*.avro",
 				"container": "capturecontainersimpletype1"
 			}
 		},
