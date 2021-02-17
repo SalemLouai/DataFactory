@@ -5,16 +5,16 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"linkedService": {
-						"referenceName": "AzureBlobStorage2",
-						"type": "LinkedServiceReference"
+					"dataset": {
+						"referenceName": "Avro1",
+						"type": "DatasetReference"
 					},
 					"name": "source1"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
-			"script": "source(allowSchemaDrift: false,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tformat: 'avro',\n\tcontainer: 'capturecontainersimpletype1',\n\tfileName: 'testsalem_testwithcapture_0_2021_02_16_16_38_36.avro',\n\tcompressionType: 'none') ~> source1"
+			"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\trowUrlColumn: 'FileName') ~> source1"
 		}
 	}
 }
