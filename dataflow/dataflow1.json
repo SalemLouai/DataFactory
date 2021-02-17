@@ -16,9 +16,12 @@
 			"transformations": [
 				{
 					"name": "Parse1"
+				},
+				{
+					"name": "DerivedColumn1"
 				}
 			],
-			"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: 100,\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> source1\nsource1 parse(ExteranlNotification = Body ? (Id as string, CommandId as string, NotificationType as string, MessageType as string, TimeStamp as date,  UserId as string, Data as string ) ,\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> Parse1"
+			"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: 100,\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> source1\nsource1 parse(ExteranlNotification = Body ? (Id as string, CommandId as string, NotificationType as string, MessageType as string, TimeStamp as date,  UserId as string, Data as string, Vin as string ) ,\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> Parse1\nParse1 derive(hashedVin = sha2(256, ExteranlNotification.Vin)) ~> DerivedColumn1"
 		}
 	}
 }
