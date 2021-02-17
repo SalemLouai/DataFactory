@@ -1,0 +1,20 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "AzureBlobStorage2",
+						"type": "LinkedServiceReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(allowSchemaDrift: false,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tformat: 'avro',\n\tcontainer: 'capturecontainersimpletype1',\n\tfileName: 'testsalem_testwithcapture_0_2021_02_16_16_38_36.avro',\n\tcompressionType: 'none') ~> source1"
+		}
+	}
+}
