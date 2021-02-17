@@ -1,0 +1,68 @@
+{
+	"name": "Avro1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Avro",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "testsalem_testwithcapture_0_2021_02_17_09_34_36.avro",
+				"container": "capturecontainersimpletype1"
+			}
+		},
+		"schema": {
+			"type": "record",
+			"name": "Microsoft.ServiceBus.Messaging.EventData",
+			"fields": [
+				{
+					"name": "SequenceNumber",
+					"type": "long"
+				},
+				{
+					"name": "Offset",
+					"type": "string"
+				},
+				{
+					"name": "EnqueuedTimeUtc",
+					"type": "string"
+				},
+				{
+					"name": "SystemProperties",
+					"type": {
+						"type": "map",
+						"values": [
+							"long",
+							"double",
+							"string",
+							"bytes"
+						]
+					}
+				},
+				{
+					"name": "Properties",
+					"type": {
+						"type": "map",
+						"values": [
+							"long",
+							"double",
+							"string",
+							"bytes",
+							"null"
+						]
+					}
+				},
+				{
+					"name": "Body",
+					"type": [
+						"null",
+						"bytes"
+					]
+				}
+			]
+		}
+	}
+}
