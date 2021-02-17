@@ -13,15 +13,8 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [
-				{
-					"name": "parse"
-				},
-				{
-					"name": "update"
-				}
-			],
-			"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: 100,\n\trowUrlColumn: 'FileName') ~> source1\nsource1 derive(ParsedBody = escape(Body,'json')) ~> parse\nparse alterRow() ~> update"
+			"transformations": [],
+			"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: 100,\n\trowUrlColumn: 'FileName') ~> source1"
 		}
 	}
 }
