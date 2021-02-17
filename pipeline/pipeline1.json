@@ -1,7 +1,0 @@
-{
-	"name": "pipeline1",
-	"properties": {
-		"concurrency": 1,
-		"annotations": []
-	}
-}
