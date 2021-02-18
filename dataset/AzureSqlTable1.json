@@ -9,7 +9,7 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "HashedVehicleId",
+				"name": "Vin",
 				"type": "nvarchar"
 			},
 			{
@@ -22,8 +22,7 @@
 			},
 			{
 				"name": "NotificationType",
-				"type": "smallint",
-				"precision": 5
+				"type": "nvarchar"
 			},
 			{
 				"name": "MessageType",
