@@ -46,7 +46,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "ExternalNotifications"
+			"table": "ExternalNotifications2"
 		}
 	}
 }
