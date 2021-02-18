@@ -1,0 +1,17 @@
+{
+	"name": "BlobContainerTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2021-02-18T08:48:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
