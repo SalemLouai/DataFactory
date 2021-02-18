@@ -2,7 +2,7 @@
 	"name": "Avro1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage2",
+			"referenceName": "AzureStorageEventHubCapatureConnexion",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "capturecontainersimpletype1"
+				"container": "capturecontainer2"
 			}
 		},
 		"schema": {
