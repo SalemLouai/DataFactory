@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "If Condition1",
+				"name": "CheckIfCaptureEnabledfeatureFlag",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
