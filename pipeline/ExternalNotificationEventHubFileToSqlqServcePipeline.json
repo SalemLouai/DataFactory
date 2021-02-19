@@ -52,7 +52,7 @@
 					},
 					"logStorageSettings": {
 						"linkedServiceName": {
-							"referenceName": "AzureBlobStorage1",
+							"referenceName": "AzureStorageEventHubCapatureConnexion",
 							"type": "LinkedServiceReference"
 						}
 					},
