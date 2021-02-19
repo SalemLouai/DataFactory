@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(activity('Web1').output.featureFlags.FF_138878_DEPRECATERELIABLESF, true)",
+						"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_138878_DEPRECATERELIABLESF, true)",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
