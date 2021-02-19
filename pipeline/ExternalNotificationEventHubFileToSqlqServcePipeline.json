@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "ExternalNotificationEventHubFileToSqlqServcePipeline",
 	"properties": {
 		"activities": [
 			{
@@ -47,7 +47,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Avro1",
+						"referenceName": "ExternalNotificationEventHubFileDataSet",
 						"type": "DatasetReference"
 					},
 					"logStorageSettings": {
