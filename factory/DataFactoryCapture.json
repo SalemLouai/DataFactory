@@ -1,4 +1,12 @@
 {
 	"name": "DataFactoryCapture",
+	"properties": {
+		"globalParameters": {
+			"FeatureFlagUrl": {
+				"type": "string",
+				"value": "http://conf.dev.emea.avnext.net/featureflags.json"
+			}
+		}
+	},
 	"location": "westeurope"
 }
