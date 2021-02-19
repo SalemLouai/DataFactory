@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(activity('Lookup1').output.FirstRow.FF_167731_EventHubExternalNotificationCaptureEnabled, 'true')",
+						"value": "@equals(activity('Lookup1').output.firstRow.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, 'true')",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
