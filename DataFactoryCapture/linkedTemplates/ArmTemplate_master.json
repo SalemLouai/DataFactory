@@ -19,7 +19,7 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageEventHubCapatureConnexion'"
 		},
-		"trigger2_properties_typeProperties_scope": {
+		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
 		},
@@ -59,8 +59,8 @@
 					"AzureStorageEventHubCapatureConnexion_connectionString": {
 						"value": "[parameters('AzureStorageEventHubCapatureConnexion_connectionString')]"
 					},
-					"trigger2_properties_typeProperties_scope": {
-						"value": "[parameters('trigger2_properties_typeProperties_scope')]"
+					"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

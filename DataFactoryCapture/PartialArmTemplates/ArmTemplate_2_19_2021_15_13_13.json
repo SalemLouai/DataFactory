@@ -6,22 +6,6 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "DataFactoryCapture"
-		},
-		"AzureBlobStorage1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
-		},
-		"AzureSqlDatabase1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
-		},
-		"AzureStorageEventHubCapatureConnexion_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageEventHubCapatureConnexion'"
-		},
-		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
 		}
 	},
 	"variables": {
@@ -49,14 +33,8 @@
 						"typeProperties": {
 							"dataflow": {
 								"referenceName": "CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow",
-								"type": "DataFlowReference",
-								"parameters": {},
-								"datasetParameters": {
-									"ExternalNotificationEventHubFileDatasource": {},
-									"InsertDataIntoSqlServcer": {}
-								}
+								"type": "DataFlowReference"
 							},
-							"staging": {},
 							"compute": {
 								"coreCount": 8,
 								"computeType": "General"
@@ -86,8 +64,7 @@
 						"typeProperties": {
 							"dataset": {
 								"referenceName": "ExternalNotificationEventHubFileDataSet",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							},
 							"logStorageSettings": {
 								"linkedServiceName": {
@@ -108,8 +85,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow')]",
-				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]",
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
+				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]"
 			]
 		},
 		{
@@ -180,9 +156,7 @@
 					]
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageEventHubCapatureConnexion')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/SqlServerDataSet')]",
@@ -237,71 +211,6 @@
 					"table": "ExternalNotifications2"
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				},
-				"Id": {
-					"type": "string"
-				},
-				"CommandId": {
-					"type": "string"
-				},
-				"NotificationType": {
-					"type": "string"
-				},
-				"MessageType": {
-					"type": "string"
-				},
-				"TimeStamp": {
-					"type": "string"
-				},
-				"UserId": {
-					"type": "string"
-				},
-				"Data": {
-					"type": "object"
-				},
-				"Vin": {
-					"type": "string"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureSqlDatabase1_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageEventHubCapatureConnexion')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageEventHubCapatureConnexion_connectionString')]"
-				}
-			},
 			"dependsOn": []
 		},
 		{
@@ -316,15 +225,14 @@
 						"pipelineReference": {
 							"referenceName": "ExternalNotificationEventHubFileToSqlqServcePipeline",
 							"type": "PipelineReference"
-						},
-						"parameters": {}
+						}
 					}
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer2/blobs/",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]",
+					"scope": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
