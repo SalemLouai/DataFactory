@@ -50,7 +50,7 @@
 						"referenceName": "ExternalNotificationEventHubFileDataSet",
 						"type": "DatasetReference"
 					},
-					"enableLogging": true,
+					"enableLogging": false,
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true,
