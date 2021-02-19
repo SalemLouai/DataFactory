@@ -27,7 +27,7 @@
 				}
 			},
 			{
-				"name": "Delete1",
+				"name": "DeleteFileFromStorage",
 				"type": "Delete",
 				"dependsOn": [
 					{
