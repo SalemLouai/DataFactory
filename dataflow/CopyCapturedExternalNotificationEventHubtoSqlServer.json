@@ -1,6 +1,7 @@
 {
-	"name": "CopyCapturedExternalNotificationEventHubtoSql",
+	"name": "CopyCapturedExternalNotificationEventHubtoSqlServer",
 	"properties": {
+		"description": "",
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [],
