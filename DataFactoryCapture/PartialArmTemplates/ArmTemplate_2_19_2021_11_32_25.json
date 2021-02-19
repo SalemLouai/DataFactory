@@ -1,0 +1,111 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "DataFactoryCapture"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "Vin",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Id",
+						"type": "varchar"
+					},
+					{
+						"name": "CommandId",
+						"type": "nvarchar"
+					},
+					{
+						"name": "NotificationType",
+						"type": "smallint",
+						"precision": 5
+					},
+					{
+						"name": "MessageType",
+						"type": "nvarchar"
+					},
+					{
+						"name": "TimeStamp",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "UserId",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Data",
+						"type": "nvarchar"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "ExternalNotifications2"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/dataflow1')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "Avro1",
+								"type": "DatasetReference"
+							},
+							"name": "AvroFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "AzureSqlTable1",
+								"type": "DatasetReference"
+							},
+							"name": "sink1"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "DerivedColumn1"
+						}
+					],
+					"script": "source(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: 100,\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> AvroFileDatasource\nAvroFileDatasource parse(Vin = Body ? (Vin as string),\n\t\t{CommandId } = Body ? (CommandId as string),\n\t\tId = Body ? (Id as string),\n\t\tNotificationType = Body ? (NotificationType as string),\n\t\tMessageType = Body ? (MessageType as string),\n\t\tDate = Body ? (TimeStamp as string),\n\t\tUserId = Body ? (UserId as string),\n\t\tData = Body ? (Data as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = Id.Id,\n\t\tCommandId = {CommandId }.CommandId,\n\t\tMessageType = MessageType.MessageType,\n\t\tNotificationType = case(NotificationType.NotificationType == 'CommandResponse', 1, case(NotificationType.NotificationType == 'Notification', 2, case(NotificationType.NotificationType == 'Alert', 3, case(NotificationType.NotificationType == 'ServiceNotification', 4, case(NotificationType.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(Date.TimeStamp, 1, 10)+substring(Date.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = UserId.UserId,\n\t\tData = Data.Data,\n\t\tVin = Vin.Vin) ~> DerivedColumn1\nDerivedColumn1 sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> sink1"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureSqlTable1')]"
+			]
+		}
+	]
+}
