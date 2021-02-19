@@ -72,7 +72,7 @@
 							}
 						},
 						{
-							"name": "DeleteFileFromStorage",
+							"name": "DeleteFileFromStorageAfterMigration",
 							"type": "Delete",
 							"dependsOn": [
 								{
