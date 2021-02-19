@@ -50,12 +50,6 @@
 						"referenceName": "ExternalNotificationEventHubFileDataSet",
 						"type": "DatasetReference"
 					},
-					"logStorageSettings": {
-						"linkedServiceName": {
-							"referenceName": "AzureStorageEventHubCapatureConnexion",
-							"type": "LinkedServiceReference"
-						}
-					},
 					"enableLogging": true,
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
