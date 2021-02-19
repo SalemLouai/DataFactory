@@ -324,7 +324,7 @@
 							},
 							"logStorageSettings": {
 								"linkedServiceName": {
-									"referenceName": "AzureBlobStorage1",
+									"referenceName": "AzureStorageEventHubCapatureConnexion",
 									"type": "LinkedServiceReference"
 								}
 							},
@@ -342,7 +342,7 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow')]",
 				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]",
-				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageEventHubCapatureConnexion')]"
 			]
 		},
 		{
