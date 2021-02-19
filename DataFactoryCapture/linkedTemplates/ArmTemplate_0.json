@@ -7,10 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "DataFactoryCapture"
 		},
-		"AzureBlobStorage1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
-		},
 		"AzureSqlDatabase1_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
@@ -28,43 +24,6 @@
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
-				},
-				"Id": {
-					"type": "string"
-				},
-				"CommandId": {
-					"type": "string"
-				},
-				"NotificationType": {
-					"type": "string"
-				},
-				"MessageType": {
-					"type": "string"
-				},
-				"TimeStamp": {
-					"type": "string"
-				},
-				"UserId": {
-					"type": "string"
-				},
-				"Data": {
-					"type": "object"
-				},
-				"Vin": {
-					"type": "string"
-				}
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
@@ -322,13 +281,7 @@
 								"type": "DatasetReference",
 								"parameters": {}
 							},
-							"logStorageSettings": {
-								"linkedServiceName": {
-									"referenceName": "AzureStorageEventHubCapatureConnexion",
-									"type": "LinkedServiceReference"
-								}
-							},
-							"enableLogging": true,
+							"enableLogging": false,
 							"storeSettings": {
 								"type": "AzureBlobStorageReadSettings",
 								"recursive": true,
@@ -341,8 +294,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow')]",
-				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]",
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageEventHubCapatureConnexion')]"
+				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]"
 			]
 		},
 		{

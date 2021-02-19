@@ -5,9 +5,6 @@
 		"factoryName": {
 			"value": "DataFactoryCapture"
 		},
-		"AzureBlobStorage1_connectionString": {
-			"value": ""
-		},
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
