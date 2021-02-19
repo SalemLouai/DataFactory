@@ -1,5 +1,5 @@
 {
-	"name": "trigger2",
+	"name": "ExternalNotificationEventHubFileTrigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
