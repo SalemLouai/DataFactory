@@ -1,5 +1,5 @@
 {
-	"name": "Avro1",
+	"name": "ExternalNotificationEventHubFileDataSet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureStorageEventHubCapatureConnexion",
