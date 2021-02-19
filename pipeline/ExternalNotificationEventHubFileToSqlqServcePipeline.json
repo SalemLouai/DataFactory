@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -31,7 +31,7 @@
 				"type": "Delete",
 				"dependsOn": [
 					{
-						"activity": "Data flow1",
+						"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
 						"dependencyConditions": [
 							"Succeeded"
 						]
