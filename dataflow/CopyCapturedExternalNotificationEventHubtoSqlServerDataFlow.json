@@ -1,5 +1,5 @@
 {
-	"name": "dataflow1",
+	"name": "CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
