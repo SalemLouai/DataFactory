@@ -21,7 +21,7 @@
 					},
 					"ifFalseActivities": [
 						{
-							"name": "DeleteFileFromStorage_copy2",
+							"name": "DeleteFileFromStorageWithoutMigration",
 							"type": "Delete",
 							"dependsOn": [],
 							"policy": {
