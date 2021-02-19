@@ -22,7 +22,8 @@
 			},
 			{
 				"name": "NotificationType",
-				"type": "nvarchar"
+				"type": "smallint",
+				"precision": 5
 			},
 			{
 				"name": "MessageType",
