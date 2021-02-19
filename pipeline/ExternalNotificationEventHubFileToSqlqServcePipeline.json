@@ -7,7 +7,7 @@
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Web1",
+						"activity": "GetFeatureFlag",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -107,7 +107,7 @@
 				}
 			},
 			{
-				"name": "Web1",
+				"name": "GetFeatureFlag",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
