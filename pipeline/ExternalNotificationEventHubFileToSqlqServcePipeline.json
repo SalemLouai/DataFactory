@@ -7,7 +7,7 @@
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "Web1",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(activity('Lookup1').output.firstRow.featureFlags.FF_138878_DEPRECATERELIABLESF, 'true')",
+						"value": "@equals(activity('Web1').output.firstRow.featureFlags.FF_138878_DEPRECATERELIABLESF, 'true')",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
@@ -107,8 +107,8 @@
 				}
 			},
 			{
-				"name": "Lookup1",
-				"type": "Lookup",
+				"name": "Web1",
+				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -119,20 +119,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"source": {
-						"type": "JsonSource",
-						"storeSettings": {
-							"type": "HttpReadSettings",
-							"requestMethod": "GET"
-						},
-						"formatSettings": {
-							"type": "JsonReadSettings"
-						}
-					},
-					"dataset": {
-						"referenceName": "FeatureFlgDataSet",
-						"type": "DatasetReference"
-					}
+					"url": "http://conf.dev.emea.avnext.net/featureflags.json",
+					"method": "GET"
 				}
 			}
 		],
