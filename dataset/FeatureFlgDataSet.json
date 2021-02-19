@@ -230,6 +230,9 @@
 						},
 						"FF_138878_DEPRECATERELIABLESF": {
 							"type": "boolean"
+						},
+						"FF_167731_EventHubExternalNotificationCaptureEnabled": {
+							"type": "boolean"
 						}
 					}
 				},
