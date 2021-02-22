@@ -27,13 +27,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocnissanConnection'"
 		},
+		"AzureStorageSacaplemonConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaplemonConnection'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
 		},
 		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
 		},
 		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 			"type": "string",
@@ -41,7 +45,11 @@
 		},
 		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
 			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		},
+		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
 		},
 		"containerUri": {
 			"type": "string",
@@ -85,11 +93,17 @@
 					"AzureStorageSacapsocnissanConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacapsocnissanConnection_connectionString')]"
 					},
+					"AzureStorageSacaplemonConnection_connectionString": {
+						"value": "[parameters('AzureStorageSacaplemonConnection_connectionString')]"
+					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					},
 					"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
