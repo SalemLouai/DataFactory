@@ -1,0 +1,35 @@
+{
+	"name": "SacaptwtDataFlows",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "AzureStorageSacaptwtDataSet",
+						"type": "DatasetReference"
+					},
+					"name": "ExternalNotificationEventHubFileDatasource"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "SqlServerDataSet",
+						"type": "DatasetReference"
+					},
+					"name": "InsertDataIntoSqlServcer"
+				}
+			],
+			"transformations": [
+				{
+					"name": "ParseExternalNotificationObject"
+				},
+				{
+					"name": "ConvertDateTimeAndNotificationType"
+				}
+			],
+			"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+		}
+	}
+}
