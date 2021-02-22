@@ -15,81 +15,89 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageEventHubCapatureConnexion'"
 		},
-		"AzureStorageSacapextnotiConnexion_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapextnotiConnexion'"
-		},
-		"AzureStorageSacapsocrenaultConnection_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocrenaultConnection'"
-		},
-		"AzureStorageSacapsocnissanConnection_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocnissanConnection'"
-		},
-		"AzureStorageSacaplemonConnection_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaplemonConnection'"
-		},
-		"AzureStorageSacapl3teleConnection_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapl3teleConnection'"
-		},
 		"AzureStorageSacapbdpteleConnexction_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapbdpteleConnexction'"
 		},
-		"AzureStorageSacaptwtConnection_connectionString": {
+		"AzureStorageSacapextnotiConnexion_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaptwtConnection'"
-		},
-		"AzureStorageSacapoctoConnection_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapoctoConnection'"
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapextnotiConnexion'"
 		},
 		"AzureStorageSacapgbtConnection_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapgbtConnection'"
 		},
-		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+		"AzureStorageSacapifscConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapifscConnection'"
 		},
-		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
+		"AzureStorageSacapl3teleConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapl3teleConnection'"
 		},
-		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
+		"AzureStorageSacaplemonConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaplemonConnection'"
 		},
-		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		"AzureStorageSacapoctoConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapoctoConnection'"
 		},
-		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
+		"AzureStorageSacapsocnissanConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocnissanConnection'"
 		},
-		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
+		"AzureStorageSacapsocrenaultConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocrenaultConnection'"
+		},
+		"AzureStorageSacaptwtConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaptwtConnection'"
 		},
 		"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapbdptele"
 		},
-		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
+		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+		},
+		"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapgbt"
+		},
+		"AzureStorageSacapifscTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapifsc"
+		},
+		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
+		},
+		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
 		},
 		"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto"
 		},
-		"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
+		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
 			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapgbt"
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		},
+		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
+		},
+		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
+		},
+		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
 		}
 	},
 	"variables": {
@@ -249,6 +257,158 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/SacapbdptelePipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapbdpteleDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapbdpteleDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapbdpteleDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapbdpteleDataFlows')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/SacapextnotiPipeline')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
@@ -398,6 +558,918 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapextnotiDataSet')]",
 				"[concat(variables('factoryId'), '/dataflows/SacapextnotiDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapgbtPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapgbtDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapgbtDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapgbtDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapgbtDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapgbtDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapifscPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapifscDataSe",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapifscDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapifscDataSe",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapifscDataSe')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapifscDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Sacapl3telePipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapl3teleDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "Sacapl3teleDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapl3teleDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapl3teleDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/Sacapl3teleDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacaplemonPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaplemonDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacaplemonDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaplemonDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaplemonDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacaplemonDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapoctoPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapoctoDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapoctoDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapoctoDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapoctoDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapsocnissanPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapsocnissanDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapsocnissanDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapsocnissanDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapsocnissanDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapsocnissanDataFlows')]"
 			]
 		},
 		{
@@ -553,6 +1625,230 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/SacaptwtPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaptwtDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacaptwtDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaptwtDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaptwtDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacaptwtDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapbdpteleConnexction",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapbdpteleConnexction')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapextnotiDataSet')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -625,6 +1921,438 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapgbtConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapgbtConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapifscDataSe')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapifscConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapifscConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapl3teleConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapl3teleConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacaplemonConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacaplemonConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapoctoConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapoctoConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapsocnissanConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapsocnissanConnection')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocrenaultDataSet')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -694,6 +2422,78 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapsocrenaultConnection')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacaptwtConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacaptwtConnection')]"
 			]
 		},
 		{
@@ -852,6 +2652,19 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleConnexction')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapbdpteleConnexction_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapextnotiConnexion')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
@@ -860,6 +2673,84 @@
 				"type": "AzureBlobStorage",
 				"typeProperties": {
 					"connectionString": "[parameters('AzureStorageSacapextnotiConnexion_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapgbtConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapifscConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapifscConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapl3teleConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacaplemonConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapoctoConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapsocnissanConnection_connectionString')]"
 				}
 			},
 			"dependsOn": []
@@ -876,6 +2767,49 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacaptwtConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapbdptelePipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapbdptelePipeline')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapextnotiTrigger')]",
@@ -908,6 +2842,176 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapgbtPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapgbtTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapgbtPipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapifscTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapifscPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapifscTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapifscPipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Sacapl3telePipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Sacapl3telePipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacaplemonPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacaplemonPipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapoctoPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapoctoPipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocrenaultTrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
@@ -926,6 +3030,36 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacaptwtPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacaptwtPipeline')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/ExternalNotificationEventHubFileTrigger')]",
@@ -999,6 +3133,47 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/SacapbdpteleDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapbdpteleDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/SacapextnotiDataFlows')]",
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
@@ -1036,6 +3211,252 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapextnotiDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapgbtDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapgbtDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapgbtDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapifscDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapifscDataSe",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapifscDataSe')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Sacapl3teleDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapl3teleDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapl3teleDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacaplemonDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacaplemonDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaplemonDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapoctoDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapoctoDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
+				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapsocnissanDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapsocnissanDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapsocnissanDataSet')]",
 				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
 			]
 		},
@@ -1081,1343 +3502,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacapsocnissanConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapsocnissanConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapsocnissanConnection')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapsocnissanDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacapsocnissanDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapsocnissanDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapsocnissanPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapsocnissanDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacapsocnissanDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapsocnissanDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapsocnissanDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacapsocnissanDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SacaplemonPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacaplemonPipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacaplemonConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacaplemonConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacaplemonConnection')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacaplemonDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacaplemonDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaplemonDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacaplemonPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacaplemonDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacaplemonDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacaplemonDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaplemonDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacaplemonDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "Sacapl3telePipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/Sacapl3telePipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacapl3teleConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapl3teleDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapl3teleConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapl3teleConnection')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Sacapl3teleDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacapl3teleDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapl3teleDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Sacapl3telePipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapl3teleDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "Sacapl3teleDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapl3teleDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapl3teleDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/Sacapl3teleDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SacapbdptelePipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacapbdptelePipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleConnexction')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacapbdpteleConnexction_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapbdpteleDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapbdpteleConnexction",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapbdpteleConnexction')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapbdpteleDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacapbdpteleDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapbdptelePipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapbdpteleDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacapbdpteleDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapbdpteleDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacapbdpteleDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacaptwtConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SacaptwtPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacaptwtPipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacaptwtConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacaptwtConnection')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/SacaptwtDataFlows')]",
 			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
@@ -2456,774 +3540,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaptwtDataSet')]",
 				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacaptwtPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacaptwtDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacaptwtDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacaptwtDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaptwtDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacaptwtDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SacapoctoPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacapoctoPipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacapoctoConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapoctoConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapoctoConnection')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapoctoDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacapoctoDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapoctoPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapoctoDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacapoctoDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapoctoDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacapoctoDataFlows')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SacapgbtPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacapgbtTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacapgbtPipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtConnection')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageSacapgbtConnection_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapgbtDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapgbtConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapgbtConnection')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapgbtDataFlows')]",
-			"type": "Microsoft.DataFactory/factories/dataflows",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"type": "MappingDataFlow",
-				"typeProperties": {
-					"sources": [
-						{
-							"dataset": {
-								"referenceName": "AzureStorageSacapgbtDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "ExternalNotificationEventHubFileDatasource"
-						}
-					],
-					"sinks": [
-						{
-							"dataset": {
-								"referenceName": "SqlServerDataSet",
-								"type": "DatasetReference"
-							},
-							"name": "InsertDataIntoSqlServcer"
-						}
-					],
-					"transformations": [
-						{
-							"name": "ParseExternalNotificationObject"
-						},
-						{
-							"name": "ConvertDateTimeAndNotificationType"
-						}
-					],
-					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapgbtDataSet')]",
-				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapgbtPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "CheckIfCaptureEnabledfeatureFlag",
-						"type": "IfCondition",
-						"dependsOn": [
-							{
-								"activity": "GetFeatureFlag",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"userProperties": [],
-						"typeProperties": {
-							"expression": {
-								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-								"type": "Expression"
-							},
-							"ifFalseActivities": [
-								{
-									"name": "DeleteFileFromStorageWithoutMigration",
-									"type": "Delete",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapgbtDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							],
-							"ifTrueActivities": [
-								{
-									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"type": "ExecuteDataFlow",
-									"dependsOn": [],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataflow": {
-											"referenceName": "SacapgbtDataFlows",
-											"type": "DataFlowReference",
-											"parameters": {
-												"BatchSize": {
-													"value": "@pipeline().globalParameters.BatchSize",
-													"type": "Expression"
-												}
-											},
-											"datasetParameters": {
-												"ExternalNotificationEventHubFileDatasource": {},
-												"InsertDataIntoSqlServcer": {}
-											}
-										},
-										"staging": {},
-										"compute": {
-											"coreCount": 8,
-											"computeType": "General"
-										},
-										"traceLevel": "Fine"
-									}
-								},
-								{
-									"name": "DeleteFileFromStorageAfterMigration",
-									"type": "Delete",
-									"dependsOn": [
-										{
-											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-											"dependencyConditions": [
-												"Succeeded"
-											]
-										}
-									],
-									"policy": {
-										"timeout": "7.00:00:00",
-										"retry": 0,
-										"retryIntervalInSeconds": 30,
-										"secureOutput": false,
-										"secureInput": false
-									},
-									"userProperties": [],
-									"typeProperties": {
-										"dataset": {
-											"referenceName": "AzureStorageSacapgbtDataSet",
-											"type": "DatasetReference",
-											"parameters": {}
-										},
-										"enableLogging": false,
-										"storeSettings": {
-											"type": "AzureBlobStorageReadSettings",
-											"recursive": true,
-											"enablePartitionDiscovery": false
-										}
-									}
-								}
-							]
-						}
-					},
-					{
-						"name": "GetFeatureFlag",
-						"type": "WebActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"url": {
-								"value": "@pipeline().globalParameters.FeatureFlagUrl",
-								"type": "Expression"
-							},
-							"method": "GET",
-							"headers": {}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapgbtDataSet')]",
-				"[concat(variables('factoryId'), '/dataflows/SacapgbtDataFlows')]"
 			]
 		}
 	]

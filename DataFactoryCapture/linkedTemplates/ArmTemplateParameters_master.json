@@ -11,62 +11,68 @@
 		"AzureStorageEventHubCapatureConnexion_connectionString": {
 			"value": ""
 		},
-		"AzureStorageSacapextnotiConnexion_connectionString": {
-			"value": ""
-		},
-		"AzureStorageSacapsocrenaultConnection_connectionString": {
-			"value": ""
-		},
-		"AzureStorageSacapsocnissanConnection_connectionString": {
-			"value": ""
-		},
-		"AzureStorageSacaplemonConnection_connectionString": {
-			"value": ""
-		},
-		"AzureStorageSacapl3teleConnection_connectionString": {
-			"value": ""
-		},
 		"AzureStorageSacapbdpteleConnexction_connectionString": {
 			"value": ""
 		},
-		"AzureStorageSacaptwtConnection_connectionString": {
-			"value": ""
-		},
-		"AzureStorageSacapoctoConnection_connectionString": {
+		"AzureStorageSacapextnotiConnexion_connectionString": {
 			"value": ""
 		},
 		"AzureStorageSacapgbtConnection_connectionString": {
 			"value": ""
 		},
-		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+		"AzureStorageSacapifscConnection_connectionString": {
+			"value": ""
 		},
-		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
+		"AzureStorageSacapl3teleConnection_connectionString": {
+			"value": ""
 		},
-		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
+		"AzureStorageSacaplemonConnection_connectionString": {
+			"value": ""
 		},
-		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		"AzureStorageSacapoctoConnection_connectionString": {
+			"value": ""
 		},
-		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
+		"AzureStorageSacapsocnissanConnection_connectionString": {
+			"value": ""
 		},
-		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
+		"AzureStorageSacapsocrenaultConnection_connectionString": {
+			"value": ""
+		},
+		"AzureStorageSacaptwtConnection_connectionString": {
+			"value": ""
 		},
 		"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapbdptele"
 		},
-		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
+		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
+		},
+		"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapgbt"
+		},
+		"AzureStorageSacapifscTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapifsc"
+		},
+		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
+		},
+		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
 		},
 		"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto"
 		},
-		"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapgbt"
+		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		},
+		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
+		},
+		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
+		},
+		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
 		},
 		"containerUri": {
 			"value": ""
