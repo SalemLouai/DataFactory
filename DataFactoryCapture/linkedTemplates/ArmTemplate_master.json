@@ -47,6 +47,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapoctoConnection'"
 		},
+		"AzureStorageSacapgbtConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapgbtConnection'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
@@ -82,6 +86,10 @@
 		"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto"
+		},
+		"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapgbt"
 		},
 		"containerUri": {
 			"type": "string",
@@ -139,6 +147,9 @@
 					},
 					"AzureStorageSacapoctoConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacapoctoConnection_connectionString')]"
+					},
+					"AzureStorageSacapgbtConnection_connectionString": {
+						"value": "[parameters('AzureStorageSacapgbtConnection_connectionString')]"
 					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
@@ -204,6 +215,9 @@
 					},
 					"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapgbtTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapgbtTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
