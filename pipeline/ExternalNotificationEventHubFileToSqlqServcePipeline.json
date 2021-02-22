@@ -62,7 +62,13 @@
 							"typeProperties": {
 								"dataflow": {
 									"referenceName": "CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow",
-									"type": "DataFlowReference"
+									"type": "DataFlowReference",
+									"parameters": {
+										"BatchSize": {
+											"value": "@pipeline().globalParameters.BatchSize",
+											"type": "Expression"
+										}
+									}
 								},
 								"compute": {
 									"coreCount": 8,
