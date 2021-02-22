@@ -31,6 +31,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaplemonConnection'"
 		},
+		"AzureStorageSacapl3teleConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapl3teleConnection'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
@@ -50,6 +54,10 @@
 		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
+		},
+		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
 		},
 		"containerUri": {
 			"type": "string",
@@ -96,6 +104,9 @@
 					"AzureStorageSacaplemonConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacaplemonConnection_connectionString')]"
 					},
+					"AzureStorageSacapl3teleConnection_connectionString": {
+						"value": "[parameters('AzureStorageSacapl3teleConnection_connectionString')]"
+					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					},
@@ -128,6 +139,9 @@
 					},
 					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

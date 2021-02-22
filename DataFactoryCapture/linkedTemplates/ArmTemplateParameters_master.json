@@ -23,6 +23,9 @@
 		"AzureStorageSacaplemonConnection_connectionString": {
 			"value": ""
 		},
+		"AzureStorageSacapl3teleConnection_connectionString": {
+			"value": ""
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
 		},
@@ -37,6 +40,9 @@
 		},
 		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
 			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
+		},
+		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
 		},
 		"containerUri": {
 			"value": ""
