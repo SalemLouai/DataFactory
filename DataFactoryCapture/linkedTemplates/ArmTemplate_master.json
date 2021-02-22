@@ -15,10 +15,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapbdpteleConnexction'"
 		},
-		"AzureStorageSacapextnotiConnexion_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapextnotiConnexion'"
-		},
 		"AzureStorageSacapgbtConnection_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapgbtConnection'"
@@ -127,9 +123,6 @@
 					},
 					"AzureStorageSacapbdpteleConnexction_connectionString": {
 						"value": "[parameters('AzureStorageSacapbdpteleConnexction_connectionString')]"
-					},
-					"AzureStorageSacapextnotiConnexion_connectionString": {
-						"value": "[parameters('AzureStorageSacapextnotiConnexion_connectionString')]"
 					},
 					"AzureStorageSacapgbtConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacapgbtConnection_connectionString')]"

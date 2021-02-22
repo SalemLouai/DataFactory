@@ -11,9 +11,6 @@
 		"AzureStorageSacapbdpteleConnexction_connectionString": {
 			"value": ""
 		},
-		"AzureStorageSacapextnotiConnexion_connectionString": {
-			"value": ""
-		},
 		"AzureStorageSacapgbtConnection_connectionString": {
 			"value": ""
 		},

@@ -13,76 +13,6 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoDataSet')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapoctoConnection",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "Avro",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"container": "capturecontainer"
-					}
-				},
-				"schema": {
-					"type": "record",
-					"name": "Microsoft.ServiceBus.Messaging.EventData",
-					"fields": [
-						{
-							"name": "SequenceNumber",
-							"type": "long"
-						},
-						{
-							"name": "Offset",
-							"type": "string"
-						},
-						{
-							"name": "EnqueuedTimeUtc",
-							"type": "string"
-						},
-						{
-							"name": "SystemProperties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes"
-								]
-							}
-						},
-						{
-							"name": "Properties",
-							"type": {
-								"type": "map",
-								"values": [
-									"long",
-									"double",
-									"string",
-									"bytes",
-									"null"
-								]
-							}
-						},
-						{
-							"name": "Body",
-							"type": [
-								"null",
-								"bytes"
-							]
-						}
-					]
-				}
-			},
-			"dependsOn": []
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanDataSet')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -624,7 +554,6 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
 				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
 			]
 		},
@@ -1504,6 +1433,157 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/Sacapl3teleDataFlows')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacaplemonPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaplemonDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacaplemonDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacaplemonDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/dataflows/SacaplemonDataFlows')]"
 			]
 		}
 	]
