@@ -1,0 +1,299 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "DataFactoryCapture"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapoctoPipeline",
+							"type": "PipelineReference"
+						}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"ignoreEmptyBlobs": true,
+					"scope": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapoctoPipeline')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapoctoDataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureStorageSacapoctoConnection",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Avro",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"container": "capturecontainer"
+					}
+				},
+				"schema": {
+					"type": "record",
+					"name": "Microsoft.ServiceBus.Messaging.EventData",
+					"fields": [
+						{
+							"name": "SequenceNumber",
+							"type": "long"
+						},
+						{
+							"name": "Offset",
+							"type": "string"
+						},
+						{
+							"name": "EnqueuedTimeUtc",
+							"type": "string"
+						},
+						{
+							"name": "SystemProperties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes"
+								]
+							}
+						},
+						{
+							"name": "Properties",
+							"type": {
+								"type": "map",
+								"values": [
+									"long",
+									"double",
+									"string",
+									"bytes",
+									"null"
+								]
+							}
+						},
+						{
+							"name": "Body",
+							"type": [
+								"null",
+								"bytes"
+							]
+						}
+					]
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapoctoDataFlows')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "AzureStorageSacapoctoDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "ExternalNotificationEventHubFileDatasource"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "SqlServerDataSet",
+								"type": "DatasetReference"
+							},
+							"name": "InsertDataIntoSqlServcer"
+						}
+					],
+					"transformations": [
+						{
+							"name": "ParseExternalNotificationObject"
+						},
+						{
+							"name": "ConvertDateTimeAndNotificationType"
+						}
+					],
+					"script": "parameters{\n\tBatchSize as integer (100)\n}\nsource(output(\n\t\tSequenceNumber as long,\n\t\tOffset as string,\n\t\tEnqueuedTimeUtc as string,\n\t\tSystemProperties as string,\n\t\tProperties as string,\n\t\tBody as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: true,\n\tlimit: ($BatchSize),\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true) ~> ExternalNotificationEventHubFileDatasource\nExternalNotificationEventHubFileDatasource parse(ExternalNotification = Body ? (Id as string,\n\t\tVin as string,\n\t\tCommandId as string,\n\t\tNotificationType as string,\n\t\tMessageType as string,\n\t\tTimeStamp as string,\n\t\tUserId as string,\n\t\tData as string),\n\tformat: 'json',\n\tdocumentForm: 'singleDocument') ~> ParseExternalNotificationObject\nParseExternalNotificationObject derive(Id = ExternalNotification.Id,\n\t\tCommandId = ExternalNotification.CommandId,\n\t\tMessageType = ExternalNotification.MessageType,\n\t\tNotificationType = case(ExternalNotification.NotificationType == 'CommandResponse', 1, case(ExternalNotification.NotificationType == 'Notification', 2, case(ExternalNotification.NotificationType == 'Alert', 3, case(ExternalNotification.NotificationType == 'ServiceNotification', 4, case(ExternalNotification.NotificationType == 'ServiceManagement', 5, 0))))),\n\t\tDate = toTimestamp(substring(ExternalNotification.TimeStamp, 1, 10)+substring(ExternalNotification.TimeStamp, 12, 8) , 'yyyy-MM-ddHH:mm:ss'),\n\t\tUserId = ExternalNotification.UserId,\n\t\tData = ExternalNotification.Data,\n\t\tVin = ExternalNotification.Vin) ~> ConvertDateTimeAndNotificationType\nConvertDateTimeAndNotificationType sink(input(\n\t\tVin as string,\n\t\tId as string,\n\t\tCommandId as string,\n\t\tNotificationType as integer,\n\t\tMessageType as string,\n\t\tTimeStamp as timestamp,\n\t\tUserId as string,\n\t\tData as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\tformat: 'table',\n\tmapColumn(\n\t\tVin,\n\t\tId,\n\t\tCommandId,\n\t\tNotificationType,\n\t\tMessageType,\n\t\tUserId,\n\t\tData,\n\t\tTimeStamp = Date\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> InsertDataIntoSqlServcer"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/SacapoctoPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapoctoDataSet",
+											"type": "DatasetReference"
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "SacapoctoDataFlows",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											}
+										},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "AzureStorageSacapoctoDataSet",
+											"type": "DatasetReference"
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET"
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapoctoDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/SacapoctoDataFlows')]"
+			]
+		}
+	]
+}

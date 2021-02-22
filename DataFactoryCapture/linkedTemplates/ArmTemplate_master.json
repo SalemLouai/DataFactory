@@ -43,6 +43,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaptwtConnection'"
 		},
+		"AzureStorageSacapoctoConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapoctoConnection'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
@@ -74,6 +78,10 @@
 		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
+		},
+		"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto"
 		},
 		"containerUri": {
 			"type": "string",
@@ -129,6 +137,9 @@
 					"AzureStorageSacaptwtConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacaptwtConnection_connectionString')]"
 					},
+					"AzureStorageSacapoctoConnection_connectionString": {
+						"value": "[parameters('AzureStorageSacapoctoConnection_connectionString')]"
+					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					},
@@ -152,18 +163,6 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
-					},
-					"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]"
-					},
-					"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]"
-					},
-					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
-					},
-					"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
@@ -185,11 +184,26 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]"
+					},
+					"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]"
+					},
 					"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]"
 					},
 					"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
