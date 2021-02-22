@@ -35,6 +35,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapl3teleConnection'"
 		},
+		"AzureStorageSacapbdpteleConnexction_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapbdpteleConnexction'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
@@ -58,6 +62,10 @@
 		"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapl3tele"
+		},
+		"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapbdptele"
 		},
 		"containerUri": {
 			"type": "string",
@@ -107,6 +115,9 @@
 					"AzureStorageSacapl3teleConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacapl3teleConnection_connectionString')]"
 					},
+					"AzureStorageSacapbdpteleConnexction_connectionString": {
+						"value": "[parameters('AzureStorageSacapbdpteleConnexction_connectionString')]"
+					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					},
@@ -142,6 +153,9 @@
 					},
 					"AzureStorageSacapl3teleTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
