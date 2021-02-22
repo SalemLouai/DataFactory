@@ -8,9 +8,6 @@
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
-		"AzureStorageEventHubCapatureConnexion_connectionString": {
-			"value": ""
-		},
 		"AzureStorageSacapbdpteleConnexction_connectionString": {
 			"value": ""
 		},
@@ -39,6 +36,9 @@
 			"value": ""
 		},
 		"AzureStorageSacaptwtConnection_connectionString": {
+			"value": ""
+		},
+		"AzureStorageSacapextnotiConnection_connectionString": {
 			"value": ""
 		},
 		"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {

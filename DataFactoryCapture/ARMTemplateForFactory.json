@@ -11,10 +11,6 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
 		},
-		"AzureStorageEventHubCapatureConnexion_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureStorageEventHubCapatureConnexion'"
-		},
 		"AzureStorageSacapbdpteleConnexction_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapbdpteleConnexction'"
@@ -54,6 +50,10 @@
 		"AzureStorageSacaptwtConnection_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacaptwtConnection'"
+		},
+		"AzureStorageSacapextnotiConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapextnotiConnection'"
 		},
 		"AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope": {
 			"type": "string",
@@ -1698,7 +1698,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "AzureStorageSacapextnotiConnexion",
+					"referenceName": "AzureStorageSacapextnotiConnection",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -1761,7 +1761,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapextnotiConnexion')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureStorageSacapextnotiConnection')]"
 			]
 		},
 		{
@@ -2406,19 +2406,6 @@
 				"type": "AzureSqlDatabase",
 				"typeProperties": {
 					"connectionString": "[parameters('AzureSqlDatabase1_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageEventHubCapatureConnexion')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureStorageEventHubCapatureConnexion_connectionString')]"
 				}
 			},
 			"dependsOn": []
@@ -3242,6 +3229,19 @@
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaptwtDataSet')]",
 				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapextnotiConnection')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureStorageSacapextnotiConnection_connectionString')]"
+				}
+			},
+			"dependsOn": []
 		}
 	]
 }
