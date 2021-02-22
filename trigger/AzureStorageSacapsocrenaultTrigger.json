@@ -1,5 +1,5 @@
 {
-	"name": "AzureStoragesacapsocrenaultTrigger",
+	"name": "AzureStorageSacapsocrenaultTrigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
