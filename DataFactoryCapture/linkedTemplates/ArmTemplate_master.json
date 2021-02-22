@@ -101,9 +101,6 @@
 					},
 					"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]"
-					},
-					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
@@ -128,6 +125,9 @@
 					},
 					"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

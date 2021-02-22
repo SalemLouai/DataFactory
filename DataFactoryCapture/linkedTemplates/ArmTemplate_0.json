@@ -38,10 +38,6 @@
 		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
-		},
-		"AzureStorageSacaplemonTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaplemon"
 		}
 	},
 	"variables": {
@@ -146,26 +142,6 @@
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaplemonTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/capturecontainer/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
@@ -806,6 +782,158 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacaplemonDataSet')]",
 				"[concat(variables('factoryId'), '/datasets/SqlServerDataSet')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ExternalNotificationEventHubFileToSqlqServcePipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "CheckIfCaptureEnabledfeatureFlag",
+						"type": "IfCondition",
+						"dependsOn": [
+							{
+								"activity": "GetFeatureFlag",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
+						"userProperties": [],
+						"typeProperties": {
+							"expression": {
+								"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
+								"type": "Expression"
+							},
+							"ifFalseActivities": [
+								{
+									"name": "DeleteFileFromStorageWithoutMigration",
+									"type": "Delete",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "ExternalNotificationEventHubFileDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							],
+							"ifTrueActivities": [
+								{
+									"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+									"type": "ExecuteDataFlow",
+									"dependsOn": [],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataflow": {
+											"referenceName": "CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow",
+											"type": "DataFlowReference",
+											"parameters": {
+												"BatchSize": {
+													"value": "@pipeline().globalParameters.BatchSize",
+													"type": "Expression"
+												}
+											},
+											"datasetParameters": {
+												"ExternalNotificationEventHubFileDatasource": {},
+												"InsertDataIntoSqlServcer": {}
+											}
+										},
+										"staging": {},
+										"compute": {
+											"coreCount": 8,
+											"computeType": "General"
+										},
+										"traceLevel": "Fine"
+									}
+								},
+								{
+									"name": "DeleteFileFromStorageAfterMigration",
+									"type": "Delete",
+									"dependsOn": [
+										{
+											"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+											"dependencyConditions": [
+												"Succeeded"
+											]
+										}
+									],
+									"policy": {
+										"timeout": "7.00:00:00",
+										"retry": 0,
+										"retryIntervalInSeconds": 30,
+										"secureOutput": false,
+										"secureInput": false
+									},
+									"userProperties": [],
+									"typeProperties": {
+										"dataset": {
+											"referenceName": "ExternalNotificationEventHubFileDataSet",
+											"type": "DatasetReference",
+											"parameters": {}
+										},
+										"enableLogging": false,
+										"storeSettings": {
+											"type": "AzureBlobStorageReadSettings",
+											"recursive": true,
+											"enablePartitionDiscovery": false
+										}
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "GetFeatureFlag",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": {
+								"value": "@pipeline().globalParameters.FeatureFlagUrl",
+								"type": "Expression"
+							},
+							"method": "GET",
+							"headers": {}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/ExternalNotificationEventHubFileDataSet')]",
+				"[concat(variables('factoryId'), '/dataflows/CopyCapturedExternalNotificationEventHubtoSqlServerDataFlow')]"
 			]
 		}
 	]
