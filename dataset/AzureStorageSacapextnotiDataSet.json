@@ -2,7 +2,7 @@
 	"name": "AzureStorageSacapextnotiDataSet",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureStorageSacapextnotiConnexion",
+			"referenceName": "AzureStorageSacapextnotiConnection",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
