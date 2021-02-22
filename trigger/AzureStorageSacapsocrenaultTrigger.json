@@ -8,7 +8,7 @@
 		"typeProperties": {
 			"blobPathBeginsWith": "/capturecontainer/blobs/",
 			"ignoreEmptyBlobs": true,
-			"scope": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti",
+			"scope": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault",
 			"events": [
 				"Microsoft.Storage.BlobCreated"
 			]
