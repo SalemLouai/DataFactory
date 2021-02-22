@@ -64,7 +64,10 @@
 									"referenceName": "SacapsocrenaultDataFlows",
 									"type": "DataFlowReference",
 									"parameters": {
-										"BatchSize": "100"
+										"BatchSize": {
+											"value": "@pipeline().globalParameters.BatchSize",
+											"type": "Expression"
+										}
 									}
 								},
 								"compute": {
