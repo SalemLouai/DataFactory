@@ -15,9 +15,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageEventHubCapatureConnexion'"
 		},
+		"AzureStorageSacapextnotiConnexion_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapextnotiConnexion'"
+		},
 		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
+		},
+		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
 		},
 		"containerUri": {
 			"type": "string",
@@ -51,6 +59,12 @@
 					},
 					"AzureStorageEventHubCapatureConnexion_connectionString": {
 						"value": "[parameters('AzureStorageEventHubCapatureConnexion_connectionString')]"
+					},
+					"AzureStorageSacapextnotiConnexion_connectionString": {
+						"value": "[parameters('AzureStorageSacapextnotiConnexion_connectionString')]"
+					},
+					"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]"
 					},
 					"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope')]"
