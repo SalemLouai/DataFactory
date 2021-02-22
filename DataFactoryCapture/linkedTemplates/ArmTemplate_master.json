@@ -23,6 +23,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocrenaultConnection'"
 		},
+		"AzureStorageSacapsocnissanConnection_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureStorageSacapsocnissanConnection'"
+		},
 		"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
@@ -34,6 +38,10 @@
 		"ExternalNotificationEventHubFileTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/capturestorageaccount1"
+		},
+		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapextnoti"
 		},
 		"containerUri": {
 			"type": "string",
@@ -74,8 +82,32 @@
 					"AzureStorageSacapsocrenaultConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacapsocrenaultConnection_connectionString')]"
 					},
+					"AzureStorageSacapsocnissanConnection_connectionString": {
+						"value": "[parameters('AzureStorageSacapsocnissanConnection_connectionString')]"
+					},
 					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "DataFactoryCapture_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
 					},
 					"AzureStorageSacapextnotiTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]"
@@ -85,7 +117,9 @@
 					}
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'DataFactoryCapture_ArmTemplate_0')]"
+			]
 		}
 	]
 }
