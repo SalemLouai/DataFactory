@@ -3,133 +3,65 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "CheckIfCaptureEnabledfeatureFlag",
-				"type": "IfCondition",
-				"dependsOn": [
-					{
-						"activity": "GetFeatureFlag",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"expression": {
-						"value": "@equals(activity('GetFeatureFlag').output.featureFlags.FF_167731_EventHubExternalNotificationCaptureEnabled, true)",
-						"type": "Expression"
-					},
-					"ifFalseActivities": [
-						{
-							"name": "DeleteFileFromStorageWithoutMigration",
-							"type": "Delete",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataset": {
-									"referenceName": "AzureStorageSacapifscDataSe",
-									"type": "DatasetReference"
-								},
-								"enableLogging": false,
-								"storeSettings": {
-									"type": "AzureBlobStorageReadSettings",
-									"recursive": true,
-									"enablePartitionDiscovery": false
-								}
-							}
-						}
-					],
-					"ifTrueActivities": [
-						{
-							"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-							"type": "ExecuteDataFlow",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataflow": {
-									"referenceName": "SacapifscDataFlows",
-									"type": "DataFlowReference",
-									"parameters": {
-										"BatchSize": {
-											"value": "@pipeline().globalParameters.BatchSize",
-											"type": "Expression"
-										}
-									}
-								},
-								"compute": {
-									"coreCount": 8,
-									"computeType": "General"
-								},
-								"traceLevel": "Fine"
-							}
-						},
-						{
-							"name": "DeleteFileFromStorageAfterMigration",
-							"type": "Delete",
-							"dependsOn": [
-								{
-									"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"dataset": {
-									"referenceName": "AzureStorageSacapifscDataSe",
-									"type": "DatasetReference"
-								},
-								"enableLogging": false,
-								"storeSettings": {
-									"type": "AzureBlobStorageReadSettings",
-									"recursive": true,
-									"enablePartitionDiscovery": false
-								}
-							}
-						}
-					]
-				}
-			},
-			{
-				"name": "GetFeatureFlag",
-				"type": "WebActivity",
+				"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
-					"retry": 0,
+					"retry": 3,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": {
-						"value": "@pipeline().globalParameters.FeatureFlagUrl",
-						"type": "Expression"
+					"dataflow": {
+						"referenceName": "SacapifscDataFlows",
+						"type": "DataFlowReference",
+						"parameters": {
+							"BatchSize": {
+								"value": "@pipeline().globalParameters.BatchSize",
+								"type": "Expression"
+							}
+						}
 					},
-					"method": "GET"
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			},
+			{
+				"name": "DeleteFileFromStorageAfterMigration",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 3,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "AzureStorageSacapifscDataSe",
+						"type": "DatasetReference"
+					},
+					"enableLogging": false,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
 				}
 			}
 		],
