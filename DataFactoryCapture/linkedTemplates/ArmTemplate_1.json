@@ -643,15 +643,9 @@
 								}
 							},
 							"staging": {},
-							"compute": {
-								"coreCount": {
-									"value": "@pipeline().globalParameters.CoreCount",
-									"type": "Expression"
-								},
-								"computeType": {
-									"value": "@pipeline().globalParameters.ComputeType",
-									"type": "Expression"
-								}
+							"integrationRuntime": {
+								"referenceName": "integrationRuntime",
+								"type": "IntegrationRuntimeReference"
 							},
 							"traceLevel": "Fine"
 						}

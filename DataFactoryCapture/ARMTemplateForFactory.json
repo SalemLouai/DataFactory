@@ -130,15 +130,9 @@
 								}
 							},
 							"staging": {},
-							"compute": {
-								"coreCount": {
-									"value": "@pipeline().globalParameters.CoreCount",
-									"type": "Expression"
-								},
-								"computeType": {
-									"value": "@pipeline().globalParameters.ComputeType",
-									"type": "Expression"
-								}
+							"integrationRuntime": {
+								"referenceName": "integrationRuntime",
+								"type": "IntegrationRuntimeReference"
 							},
 							"traceLevel": "Fine"
 						}
@@ -181,6 +175,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/SacapbdpteleDataFlows')]",
+				"[concat(variables('factoryId'), '/integrationRuntimes/integrationRuntime')]",
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]"
 			]
 		},
@@ -2617,7 +2612,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/integrationRuntime1')]",
+			"name": "[concat(parameters('factoryName'), '/integrationRuntime')]",
 			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -2626,7 +2621,7 @@
 					"computeProperties": {
 						"location": "AutoResolve",
 						"dataFlowProperties": {
-							"computeType": "MemoryOptimized",
+							"computeType": "General",
 							"coreCount": 8,
 							"timeToLive": 10
 						}
