@@ -2,7 +2,7 @@
 	"name": "AzureStorageSacapl3teleTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
