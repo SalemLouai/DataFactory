@@ -5,6 +5,10 @@
 			"BatchSize": {
 				"type": "int",
 				"value": 100
+			},
+			"coreCount": {
+				"type": "string",
+				"value": "General"
 			}
 		}
 	},
