@@ -35,6 +35,14 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapocto"
 		},
+		"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocnissan"
+		},
+		"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacapsocrenault"
+		},
 		"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/f505aa4b-46bf-475e-a8cc-14aed61caf34/resourceGroups/Test-Azure-Event-Hub-Capture/providers/Microsoft.Storage/storageAccounts/devemeasacaptwt"
@@ -44,164 +52,6 @@
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapoctoPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-						"type": "ExecuteDataFlow",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 3,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataflow": {
-								"referenceName": "SacapoctoDataFlows",
-								"type": "DataFlowReference",
-								"parameters": {
-									"BatchSize": {
-										"value": "@pipeline().globalParameters.BatchSize",
-										"type": "Expression"
-									}
-								},
-								"datasetParameters": {
-									"ExternalNotificationEventHubFileDatasource": {},
-									"InsertDataIntoSqlServcer": {}
-								}
-							},
-							"staging": {},
-							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
-							},
-							"traceLevel": "Fine"
-						}
-					},
-					{
-						"name": "DeleteFileFromStorageAfterMigration",
-						"type": "Delete",
-						"dependsOn": [
-							{
-								"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 3,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataset": {
-								"referenceName": "AzureStorageSacapoctoDataSet",
-								"type": "DatasetReference",
-								"parameters": {}
-							},
-							"enableLogging": false,
-							"storeSettings": {
-								"type": "AzureBlobStorageReadSettings",
-								"recursive": true,
-								"enablePartitionDiscovery": false
-							}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/SacapsocnissanPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-						"type": "ExecuteDataFlow",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 3,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataflow": {
-								"referenceName": "SacapsocnissanDataFlows",
-								"type": "DataFlowReference",
-								"parameters": {
-									"BatchSize": {
-										"value": "@pipeline().globalParameters.BatchSize",
-										"type": "Expression"
-									}
-								},
-								"datasetParameters": {
-									"ExternalNotificationEventHubFileDatasource": {},
-									"InsertDataIntoSqlServcer": {}
-								}
-							},
-							"staging": {},
-							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
-							},
-							"traceLevel": "Fine"
-						}
-					},
-					{
-						"name": "DeleteFileFromStorageAfterMigration",
-						"type": "Delete",
-						"dependsOn": [
-							{
-								"activity": "ExternalNotificationEventHubCopyTheDataFromFileToSql",
-								"dependencyConditions": [
-									"Succeeded"
-								]
-							}
-						],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 3,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataset": {
-								"referenceName": "AzureStorageSacapsocnissanDataSet",
-								"type": "DatasetReference",
-								"parameters": {}
-							},
-							"enableLogging": false,
-							"storeSettings": {
-								"type": "AzureBlobStorageReadSettings",
-								"recursive": true,
-								"enablePartitionDiscovery": false
-							}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('factoryName'), '/SacapsocrenaultPipeline')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
@@ -237,8 +87,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -316,8 +172,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -366,7 +228,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -379,6 +241,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -407,6 +270,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -422,7 +286,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -435,6 +299,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapgbtTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -450,7 +315,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -463,6 +328,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapifscTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -478,7 +344,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -491,6 +357,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -506,7 +373,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -519,6 +386,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -534,7 +402,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -547,6 +415,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -554,8 +423,66 @@
 					]
 				}
 			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocnissanTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapsocnissanPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocrenaultTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapsocrenaultPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SacapoctoPipeline')]"
+				"[concat(variables('factoryId'), '/pipelines/SacapsocrenaultPipeline')]"
 			]
 		},
 		{
@@ -564,7 +491,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -577,6 +504,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]",
 					"events": [

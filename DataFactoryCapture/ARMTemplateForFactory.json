@@ -131,8 +131,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -213,8 +219,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -295,8 +307,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -377,8 +395,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -459,8 +483,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -541,8 +571,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -623,8 +659,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -705,8 +747,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -787,8 +835,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -869,8 +923,14 @@
 							},
 							"staging": {},
 							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -1842,7 +1902,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1855,6 +1915,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapbdpteleTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -1885,6 +1946,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapextnotiTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -1902,7 +1964,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1915,6 +1977,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapgbtTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -1932,7 +1995,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1945,6 +2008,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapifscTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -1962,7 +2026,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -1975,6 +2039,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapl3teleTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -1992,7 +2057,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -2005,6 +2070,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacaplemonTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -2022,7 +2088,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -2035,6 +2101,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -2052,11 +2119,20 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapsocnissanPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -2064,7 +2140,9 @@
 					]
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapsocnissanPipeline')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacapsocrenaultTrigger')]",
@@ -2072,11 +2150,20 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "SacapsocrenaultPipeline",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]",
 					"events": [
@@ -2084,7 +2171,9 @@
 					]
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/SacapsocrenaultPipeline')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/AzureStorageSacaptwtTrigger')]",
@@ -2092,7 +2181,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -2105,6 +2194,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/capturecontainer/blobs/",
+					"blobPathEndsWith": ".avro",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]",
 					"events": [

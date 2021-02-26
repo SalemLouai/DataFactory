@@ -150,12 +150,6 @@
 					},
 					"AzureStorageSacaptwtConnection_connectionString": {
 						"value": "[parameters('AzureStorageSacaptwtConnection_connectionString')]"
-					},
-					"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]"
-					},
-					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},
@@ -215,6 +209,12 @@
 					},
 					"AzureStorageSacapoctoTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacapoctoTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapsocnissanTrigger_properties_typeProperties_scope')]"
+					},
+					"AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('AzureStorageSacapsocrenaultTrigger_properties_typeProperties_scope')]"
 					},
 					"AzureStorageSacaptwtTrigger_properties_typeProperties_scope": {
 						"value": "[parameters('AzureStorageSacaptwtTrigger_properties_typeProperties_scope')]"

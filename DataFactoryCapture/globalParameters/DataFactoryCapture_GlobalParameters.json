@@ -2,5 +2,13 @@
 	"BatchSize": {
 		"type": "int",
 		"value": 100
+	},
+	"CoreCount": {
+		"type": "int",
+		"value": 8
+	},
+	"ComputeType": {
+		"type": "string",
+		"value": "General"
 	}
 }
