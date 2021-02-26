@@ -130,9 +130,15 @@
 								}
 							},
 							"staging": {},
-							"integrationRuntime": {
-								"referenceName": "integrationRuntime1",
-								"type": "IntegrationRuntimeReference"
+							"compute": {
+								"coreCount": {
+									"value": "@pipeline().globalParameters.CoreCount",
+									"type": "Expression"
+								},
+								"computeType": {
+									"value": "@pipeline().globalParameters.ComputeType",
+									"type": "Expression"
+								}
 							},
 							"traceLevel": "Fine"
 						}
@@ -175,7 +181,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/SacapbdpteleDataFlows')]",
-				"[concat(variables('factoryId'), '/integrationRuntimes/integrationRuntime1')]",
 				"[concat(variables('factoryId'), '/datasets/AzureStorageSacapbdpteleDataSet')]"
 			]
 		},
