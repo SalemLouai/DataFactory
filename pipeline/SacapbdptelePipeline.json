@@ -26,8 +26,14 @@
 						}
 					},
 					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
+						"coreCount": {
+							"value": "@pipeline().globalParameters.CoreCount",
+							"type": "Expression"
+						},
+						"computeType": {
+							"value": "@pipeline().globalParameters.ComputeType",
+							"type": "Expression"
+						}
 					},
 					"traceLevel": "Fine"
 				}
