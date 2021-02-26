@@ -6,7 +6,7 @@
 				"type": "int",
 				"value": 100
 			},
-			"coreCount": {
+			"CoreCount": {
 				"type": "string",
 				"value": "General"
 			}
