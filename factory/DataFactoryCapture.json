@@ -7,8 +7,8 @@
 				"value": 100
 			},
 			"CoreCount": {
-				"type": "string",
-				"value": "General"
+				"type": "int",
+				"value": 8
 			}
 		}
 	},
