@@ -209,8 +209,8 @@
 					"computeProperties": {
 						"location": "AutoResolve",
 						"dataFlowProperties": {
-							"computeType": "ComputeOptimized",
-							"coreCount": 16,
+							"computeType": "MemoryOptimized",
+							"coreCount": 8,
 							"timeToLive": 10
 						}
 					}
