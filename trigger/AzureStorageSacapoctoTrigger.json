@@ -2,7 +2,7 @@
 	"name": "AzureStorageSacapoctoTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
