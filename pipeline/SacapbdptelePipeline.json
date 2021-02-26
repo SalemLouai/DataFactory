@@ -25,15 +25,9 @@
 							}
 						}
 					},
-					"compute": {
-						"coreCount": {
-							"value": "@pipeline().globalParameters.CoreCount",
-							"type": "Expression"
-						},
-						"computeType": {
-							"value": "@pipeline().globalParameters.ComputeType",
-							"type": "Expression"
-						}
+					"integrationRuntime": {
+						"referenceName": "integrationRuntime1",
+						"type": "IntegrationRuntimeReference"
 					},
 					"traceLevel": "Fine"
 				}
